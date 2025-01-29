@@ -1,0 +1,7 @@
+{
+    "git.branchProtection": [
+        "main"
+    ],
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "files.autoSave": "afterDelay"
+}
