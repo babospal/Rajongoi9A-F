@@ -14,5 +14,6 @@ majd ötletelj te is
 nits google driveba a dokumentumoknál ott vannak feltételek határidő stb
 ki kéne találni egységes színeket (hogy ne legyen pl 5 féle piros hanem 1 és több helyen is használhatjuk ugyan azt)
 barna:#5A433A (háttérnek?)
+zöld:#85B05E 
 
 verziók: https://terraria.fandom.com/wiki/PC_version_history
