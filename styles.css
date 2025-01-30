@@ -10,9 +10,16 @@
 .nav-link:hover{
     background-color: #96c768;
 }
-body{
-    background-color: #8B5A2B;
-}
+
 #article-container{
     margin-left: 150px;
+}
+article, aside{
+    background-color: #8B5A2B;
+    color: white;
+}
+body{
+    background-image: url(images/háttér.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
