@@ -19,9 +19,9 @@ article, aside{
     color: white;
 }
 body{
-    background-image: url(images/háttér.webp);
+    background:linear-gradient(#2e632b, #634b2b);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
 }
 header{
     text-align: center;
