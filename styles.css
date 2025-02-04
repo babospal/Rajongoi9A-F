@@ -19,7 +19,7 @@ article, aside{
     color: white;
 }
 body{
-    background:linear-gradient(#2e632b, #634b2b);
+    background:linear-gradient(to right, #2e632b, #634b2b);
     background-repeat: no-repeat;
     background-size: auto;
 }
