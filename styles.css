@@ -45,3 +45,6 @@ header{
     z-index: 1000;
     background-color: inherit;
 }
+.media_kep{
+    border: 2px solid #85B05E;
+}
