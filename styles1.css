@@ -114,17 +114,17 @@ p li {
 
 .embedded_youtube {
     width: 645px;
-    height: 400px;
-    object-fit: contain;
+    height: 458px;
+    object-fit: contain; 
 }
 
 .embedded_image {
-    width: 300px;
-    height: auto;
+    width: 458px; 
+    height: 458px;
 }
 
 .media-container {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
+    align-items: flex-start; 
+    gap: 50px;
+} 
