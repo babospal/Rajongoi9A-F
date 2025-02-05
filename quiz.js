@@ -27,7 +27,9 @@ function loadQuestion() {
         const button = document.createElement("button");
         button.classList.add("btn", "btn-outline-primary");
         button.textContent = answer;
-        button.onclick = () => checkAnswer(index);
+        button.onclick = () => {
+            checkAnswer(index);
+        };
         answersElement.appendChild(button);
     });
 
@@ -36,9 +38,13 @@ function loadQuestion() {
 
 function checkAnswer(index) {
     const isCorrect = index === questions[currentQuestionIndex].correct;
+    
     if (isCorrect) {
         score++;
     }
+
+    document.querySelectorAll("#answers button")[index].classList.add(isCorrect ? "btn-success" : "btn-danger");
+
     nextButton.style.display = "block";
 }
 
@@ -47,7 +53,7 @@ nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         loadQuestion();
     } else {
-        questionElement.textContent = "Gratulálok! ${score}/${questions.length} jó választ adtál.";
+        questionElement.textContent = `Gratulálok! ${score} / ${questions.length} helyes választ adtál.`;
         answersElement.innerHTML = "";
         nextButton.style.display = "none";
     }
