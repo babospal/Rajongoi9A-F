@@ -29,9 +29,8 @@ article, aside{
     color: white;
 }
 body{
-    background:linear-gradient(to right, #2e632b, #634b2b);
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-image: url(images/5bb52d881f583897ed5d90b103889020.jpg);
+    background-repeat: repeat-x;
 }
 header{
     text-align: center;
@@ -44,7 +43,26 @@ header{
     width: 100%;
     z-index: 1000;
     background-color: inherit;
+    background-color: #243525;
+    margin-bottom: 50px;
 }
 .media_kep{
     border: 2px solid #85B05E;
+}
+
+.media_div{
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.media_div:hover{
+    transform: scale(1.03);
+}
+
+#tema{
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;  
+}
+
+#tema:hover{
+    transform: scale(1.05);
+    background-color: #AB6F3B;
 }
