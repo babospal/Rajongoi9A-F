@@ -12,6 +12,7 @@ const questions = [
 ];
 
 let currentQuestionIndex = 0;
+let score = 0;
 
 const questionElement = document.getElementById("question");
 const answersElement = document.getElementById("answers");
@@ -35,8 +36,9 @@ function loadQuestion() {
 
 function checkAnswer(index) {
     const isCorrect = index === questions[currentQuestionIndex].correct;
-    document.querySelectorAll("#answers button")[index].classList.add(isCorrect ? "btn-success" : "btn-danger");
-
+    if (isCorrect) {
+        score++;
+    }
     nextButton.style.display = "block";
 }
 
@@ -45,7 +47,7 @@ nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         loadQuestion();
     } else {
-        questionElement.textContent = "Gratulálok! Végigjátszottad a kvízt.";
+        questionElement.textContent = "Gratulálok! ${score}/${questions.length} jó választ adtál.";
         answersElement.innerHTML = "";
         nextButton.style.display = "none";
     }
