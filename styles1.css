@@ -44,7 +44,8 @@ header{
     z-index: 1000;
     background-color: inherit;
     background-color: #243525;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 24px;
 }
 .media_kep{
     border: 2px solid #85B05E;
@@ -64,5 +65,5 @@ header{
 
 #tema:hover{
     transform: scale(1.05);
-    background-color: #AB6F3B;
+    background-color: #9E6634;
 }
