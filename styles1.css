@@ -156,3 +156,22 @@ p li {
     color: white;
     transform: scale(1.03);
 }
+
+aside {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+}
+
+@media (min-width: 600px) {
+    .content-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    aside {
+        width: 25%;
+        max-width: none;
+        margin: 0 30px;
+    }
+}
