@@ -202,9 +202,21 @@ aside {
 
 .wall_grass_top {
     background-image: url(images/wall_top_grass.e8d5ebf5.png);
-    width: 1863px;
+    width: 100%;
     height: 13px;
     margin-top: 35px;
+}
+
+@media (min-width: 600px) {
+    .wall_grass_top {
+        height: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    .wall_grass_top {
+        height: 8px;
+    }
 }
 
 .flex-container {
