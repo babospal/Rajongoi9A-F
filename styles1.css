@@ -195,9 +195,17 @@ h4, h5, p {
     color: white;
 }
 
+.embedded_youtube{
+    min-height: 458px;
+    max-height: auto;
+}
+
+.embedded_image{
+    height: auto;
+}
+
 .embedded_youtube, .embedded_image {
     width: 100%;
-    height: auto;
     max-width: 800px;
     object-fit: cover; /* Ensure the content covers the container without stretching */
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
@@ -233,7 +241,7 @@ h4, h5, p {
 }
 
 .download2{
-    margin-top: 220px;
+    margin-top: auto;
     width: 100px;
     height: 100px;
     object-fit: contain;
