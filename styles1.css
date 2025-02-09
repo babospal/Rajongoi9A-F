@@ -101,6 +101,41 @@ header {
     display: flex;
     flex-direction: column;
     color: #dbcbbf;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.parent-container h4, .parent-container h5, .parent-container p, .parent-container ul {
+    font-size: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 10px 0;
+}
+
+@media (min-width: 600px) {
+    .parent-container h4 {
+        font-size: 120%;
+    }
+    .parent-container h5 {
+        font-size: 110%;
+    }
+    .parent-container p, .parent-container ul {
+        font-size: 105%;
+    }
+}
+
+@media (min-width: 900px) {
+    .parent-container h4 {
+        font-size: 140%;
+    }
+    .parent-container h5 {
+        font-size: 130%;
+    }
+    .parent-container p, .parent-container ul {
+        font-size: 110%;
+    }
 }
 
 h4 h5 {
@@ -113,6 +148,36 @@ p li {
     margin-top: 0;
     font-size: 110%;
     font-weight: 500;
+}
+
+h4, h5, p {
+    font-size: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 600px) {
+    h4 {
+        font-size: 120%;
+    }
+    h5 {
+        font-size: 110%;
+    }
+    p {
+        font-size: 105%;
+    }
+}
+
+@media (min-width: 900px) {
+    h4 {
+        font-size: 140%;
+    }
+    h5 {
+        font-size: 130%;
+    }
+    p {
+        font-size: 110%;
+    }
 }
 
 .content-container {
@@ -130,21 +195,16 @@ p li {
     color: white;
 }
 
-.embedded_youtube {
-    width: 800px;
-    height: 609px;
-    object-fit: contain; 
+.embedded_youtube, .embedded_image {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    object-fit: cover; /* Ensure the content covers the container without stretching */
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.embedded_youtube:hover{
+.embedded_youtube:hover, .embedded_image:hover {
     transform: scale(1.01);
-}
-
-.embedded_image {
-    width: 458px; 
-    height: 458px;
-    margin-top: 90px;
 }
 
 .media-container {
@@ -152,6 +212,13 @@ p li {
     align-items: flex-start; 
     gap: 30px;
 } 
+
+@media (max-width: 900px) {
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .download{
     text-decoration: none;
