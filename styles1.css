@@ -228,7 +228,11 @@ h4, h5, p {
     }
 }
 
-.download{
+.download, .download2 {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -238,17 +242,6 @@ h4, h5, p {
 .download:hover{
     color: white;
     transform: scale(1.03);
-}
-
-.download2{
-    margin-top: auto;
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
 .download2:hover{
