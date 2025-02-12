@@ -291,7 +291,3 @@ aside {
     display: flex;
     justify-content: space-between;
 }
-.carousel-container {
-    max-width: 750px; 
-    margin: 0 auto; 
-  }
