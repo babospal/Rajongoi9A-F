@@ -106,7 +106,10 @@ header {
     box-sizing: border-box;
 }
 
-.parent-container h4, .parent-container h5, .parent-container p, .parent-container ul {
+.parent-container h4,
+.parent-container h5,
+.parent-container p,
+.parent-container ul {
     font-size: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -118,10 +121,13 @@ header {
     .parent-container h4 {
         font-size: 120%;
     }
+
     .parent-container h5 {
         font-size: 110%;
     }
-    .parent-container p, .parent-container ul {
+
+    .parent-container p,
+    .parent-container ul {
         font-size: 105%;
     }
 }
@@ -130,10 +136,13 @@ header {
     .parent-container h4 {
         font-size: 140%;
     }
+
     .parent-container h5 {
         font-size: 130%;
     }
-    .parent-container p, .parent-container ul {
+
+    .parent-container p,
+    .parent-container ul {
         font-size: 110%;
     }
 }
@@ -150,7 +159,9 @@ p li {
     font-weight: 500;
 }
 
-h4, h5, p {
+h4,
+h5,
+p {
     font-size: 100%;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -160,9 +171,11 @@ h4, h5, p {
     h4 {
         font-size: 120%;
     }
+
     h5 {
         font-size: 110%;
     }
+
     p {
         font-size: 105%;
     }
@@ -172,9 +185,11 @@ h4, h5, p {
     h4 {
         font-size: 140%;
     }
+
     h5 {
         font-size: 130%;
     }
+
     p {
         font-size: 110%;
     }
@@ -195,31 +210,34 @@ h4, h5, p {
     color: white;
 }
 
-.embedded_youtube{
+.embedded_youtube {
     min-height: 458px;
     max-height: auto;
 }
 
-.embedded_image{
+.embedded_image {
     height: auto;
 }
 
-.embedded_youtube, .embedded_image {
+.embedded_youtube,
+.embedded_image {
     width: 100%;
     max-width: 800px;
-    object-fit: cover; /* Ensure the content covers the container without stretching */
+    object-fit: cover;
+    /* Ensure the content covers the container without stretching */
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.embedded_youtube:hover, .embedded_image:hover {
+.embedded_youtube:hover,
+.embedded_image:hover {
     transform: scale(1.01);
 }
 
 .media-container {
     display: flex;
-    align-items: flex-start; 
+    align-items: flex-start;
     gap: 30px;
-} 
+}
 
 @media (max-width: 900px) {
     .media-container {
@@ -228,7 +246,8 @@ h4, h5, p {
     }
 }
 
-.download, .download2 {
+.download,
+.download2 {
     margin: 0 auto;
     display: block;
     width: 100%;
@@ -239,12 +258,12 @@ h4, h5, p {
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
 }
 
-.download:hover{
+.download:hover {
     color: white;
     transform: scale(1.03);
 }
 
-.download2:hover{
+.download2:hover {
     color: white;
     transform: scale(1.03);
 }
@@ -290,4 +309,79 @@ aside {
 .flex-container {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .nav-link {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    #article-container {
+        margin-left: 0;
+    }
+
+    .content-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    iframe#game-player {
+        width: 1400px;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    aside {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.nevjegyzek {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between divs as needed */
+}
+
+.nevjegyzek div {
+    flex: 1 1 auto; /* Allow divs to grow and shrink as needed */
 }
