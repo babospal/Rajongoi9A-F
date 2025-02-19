@@ -16,7 +16,7 @@ const questions = [
     },
     {
         question: "Melyik platformon jelent meg először a Terraria?",
-        answers: ["PC (Steam)", "Xbox 360", "PlayStation 3", "Android"],
+        answers: ["PC", "Xbox 360", "PlayStation 3", "Android"],
         correct: 0
     },
     {
